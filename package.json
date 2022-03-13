@@ -9,5 +9,10 @@
     "backend",
     "frontend",
     "types"
-  ]
+  ],
+  "scripts": {
+    "start-backend": "cd backend && yarn start",
+    "start-frontend": "cd frontend && yarn start",
+    "build-frontend": "cd frontend && yarn build"
+  }
 }
