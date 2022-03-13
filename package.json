@@ -1,0 +1,13 @@
+{
+  "name": "fastify-ws",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mbecker20",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "types"
+  ]
+}
