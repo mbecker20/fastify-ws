@@ -11,7 +11,11 @@ const Input: Component<
       {...p}
       onInput={(e) => p.onEdit && p.onEdit(e.currentTarget.value)}
       onBlur={(e) => p.onConfirm && p.onConfirm(e.currentTarget.value)}
-      onKeyDown={(e) => e.key === "Enter" && e.currentTarget.blur()}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") {
+           p.onConfirm && p.onConfirm(e.currentTarget.value);
+        }
+      }}
     />
   );
 };

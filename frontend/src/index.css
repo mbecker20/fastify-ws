@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightseagreen;
 }
 
 code {
@@ -35,4 +36,13 @@ button:focus {
 
 input {
   font-size: 2rem;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(252, 234, 222, 0.3);
+  border-radius: 5px;
 }
